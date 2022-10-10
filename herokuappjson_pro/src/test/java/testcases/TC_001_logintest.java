@@ -39,8 +39,8 @@ public class TC_001_logintest extends BaseClass {
 			JsonReader jread = new JsonReader();
 			jread.getdata(1);
 			login.login(jread.getUsername(), jread.getPassword());
-			actualurl = driver.getCurrentUrl();
-			Assert.assertNotEquals(actualurl, expectedurl);
+
+			Assert.assertEquals(true, login.getpasswordError().isDisplayed());
 			test.log(Status.PASS, "login unsuccessfull");
 		} catch (Exception e) {
 			test.log(Status.FAIL, e.getMessage());
@@ -56,8 +56,7 @@ public class TC_001_logintest extends BaseClass {
 			JsonReader jread = new JsonReader();
 			jread.getdata(2);
 			login.login(jread.getUsername(), jread.getPassword());
-			actualurl = driver.getCurrentUrl();
-			Assert.assertNotEquals(actualurl, expectedurl);
+			Assert.assertEquals(true, login.getuserIderror().isDisplayed());
 			test.log(Status.PASS, "login unsuccessfull");
 		} catch (Exception e) {
 			test.log(Status.FAIL, e.getMessage());

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16935" started-at="2022-10-09T11:46:57 CDT" finished-at="2022-10-09T11:47:14 CDT">
+  <suite name="Default suite" duration-ms="10105" started-at="2022-10-09T19:33:03 CDT" finished-at="2022-10-09T19:33:13 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16935" started-at="2022-10-09T11:46:57 CDT" finished-at="2022-10-09T11:47:14 CDT">
+    <test name="Default test" duration-ms="10105" started-at="2022-10-09T19:33:03 CDT" finished-at="2022-10-09T19:33:13 CDT">
       <class name="testcases.TC_001_logintest">
-        <test-method status="PASS" signature="loadPropertyFile()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="loadPropertyFile" is-config="true" duration-ms="197" started-at="2022-10-09T11:46:57 CDT" finished-at="2022-10-09T11:46:57 CDT">
+        <test-method status="PASS" signature="loadPropertyFile()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="loadPropertyFile" is-config="true" duration-ms="277" started-at="2022-10-09T19:33:03 CDT" finished-at="2022-10-09T19:33:03 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertyFile -->
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="launchDriver" is-config="true" duration-ms="3168" started-at="2022-10-09T11:46:57 CDT" finished-at="2022-10-09T11:47:01 CDT">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="launchDriver" is-config="true" duration-ms="6279" started-at="2022-10-09T19:33:03 CDT" finished-at="2022-10-09T19:33:10 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="logintestpositive()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="logintestpositive" duration-ms="12326" started-at="2022-10-09T11:47:01 CDT" finished-at="2022-10-09T11:47:13 CDT">
+        <test-method status="PASS" signature="logintestnegative1()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="logintestnegative1" duration-ms="2345" started-at="2022-10-09T19:33:10 CDT" finished-at="2022-10-09T19:33:12 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintestpositive -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="teardown" is-config="true" duration-ms="1422" started-at="2022-10-09T11:47:13 CDT" finished-at="2022-10-09T11:47:14 CDT">
+        </test-method> <!-- logintestnegative1 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.TC_001_logintest@2641e737]" name="teardown" is-config="true" duration-ms="1458" started-at="2022-10-09T19:33:12 CDT" finished-at="2022-10-09T19:33:13 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -24,11 +24,25 @@ public class Login_Page extends Seleniumutils {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginBtn;
 
+	@FindBy(xpath = "//div[contains(text(),' Your username is invalid!')]")
+	WebElement userIderror;
+
+	@FindBy(xpath = "//div[contains(text(),' Your password is invalid!')]")
+	WebElement passwordError;
+
 	public void login(String usr, String pswd) {
 		entertext(usrname, usr);
 		entertext(pwd, pswd);
 		seleniumclick(loginBtn);
 
+	}
+
+	public WebElement getuserIderror() {
+		return userIderror;
+	}
+
+	public WebElement getpasswordError() {
+		return passwordError;
 	}
 
 }
