@@ -63,6 +63,22 @@ public class TC_001_logintest extends BaseClass {
 		}
 	}
 
+	@Test
+	public void logintestnegative4() {
+		test = extent.createTest(new Object() {
+		}.getClass().getEnclosingMethod().getName());
+		try {
+			Login_Page login = new Login_Page(driver);
+			JsonReader jread = new JsonReader();
+			jread.getdata(3);
+			login.login(jread.getUsername(), jread.getPassword());
+			Assert.assertEquals(true, login.getuserIderror().isDisplayed());
+			test.log(Status.PASS, "login unsuccessfull");
+		} catch (Exception e) {
+			test.log(Status.FAIL, e.getMessage());
+		}
+	}
+
 }
 
 
